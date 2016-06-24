@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#top {
+  background-color: #D15151;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  min-height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#top .icon {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: transparent;
+  border: 6px solid white;
+  border-radius: 1%;
+  width: 140px; height: 140px;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 130px;
+  line-height: 140px;
+  color: white;
+}
+
+#middle {
+  padding: 120px 0;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+#middle h3 {
+  font-size: 20px;
+  padding-top: 60px
+}
+
+#middle #content {
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+#content > div {
+  width: 65%;
+}
+
+#middle ul {
+  padding: 0;
+}
+
+#middle li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#middle label {
+  display: block;
+}
+
+#middle textarea {
+  width: 300px;
+  height: 100px;
+}
+
+#middle input, textarea, select {
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    outline: none;
+}
+
+#middle input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 6px #d39f9f;
+    border: 1px solid #d39f9f;
+}
+
+#middle input[type=submit] {
+    background: #D15151;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border: none;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+#middle input[type=submit]:hover {
+    background: #A74040;
+    box-shadow: none;
+}
+
+#footer {
+  width: 100%;
+  height: 23px;
+  background-color: #404040;
+  overflow: hidden;
+  /*margin: auto;*/
+}
+#footer .copyright {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 6px 20px;
+  color: white;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .icon {
+      width: 100%;
+  }
+  #middle {
+      padding: 40px 20px;
+  }
+  #middle .desc {
+      width: 100%;
+  }
+  #middle textarea {
+    width: 90%;
+  }
+}
